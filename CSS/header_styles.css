@@ -1,0 +1,13 @@
+header {
+    background-color: #2d333b;
+    color: #aab6c3;
+    font-family: cursive;
+    text-align: right;
+    width: 100%;
+    white-space: pre;
+}
+header table {
+    display: inline-table;
+    border-spacing: 50px 0;
+}
+

@@ -1,0 +1,54 @@
+form {
+    width: 70%;
+}
+
+#form_table{
+    border-spacing: 10px;
+    width: 100%;
+}
+
+label{
+    color: #aab6c3;
+    border-radius: 5px;
+    margin: 0 0 0 5%;
+}
+
+select, input[type="text"] {
+    width: 60%;
+    margin: 0 0 0 5%;
+    box-sizing: border-box;
+}
+
+input, select, button{
+    /**border: 0;*/
+    background-color: #aab6c3;
+    color: #22272e;
+}
+
+input:hover, select:hover, button:hover{
+    background-color: #2d333b;
+    color: #aab6c3;
+}
+
+.invalidInput {
+    border: 2px solid darkred;
+    background-color: #aab6c3;
+    color: darkred;
+    box-shadow: 3px 2px 5px darkred;
+    /*box-shadow: 3px 2px 5px darkred;*/
+}
+
+.invalidInput:hover {
+    border: 2px solid darkred;
+    background-color: #ffdddd;
+    color: #22272e;
+    box-shadow: 3px 2px 5px darkred;
+    /*box-shadow: 3px 2px 5px darkred;*/
+}
+
+.error {
+    font-size: small;
+    font-family: "Calibri Light",cursive;
+    color: #aab6c3;
+    box-sizing: border-box;
+}
