@@ -8,7 +8,7 @@ form {
 }
 
 label{
-    color: #aab6c3;
+    color: white;
     border-radius: 5px;
     margin: 0 0 0 5%;
 }
@@ -21,34 +21,34 @@ select, input[type="text"] {
 
 input, select, button{
     /**border: 0;*/
-    background-color: #aab6c3;
-    color: #22272e;
+    background-color: #FFE873;
+    color: black;
 }
 
 input:hover, select:hover, button:hover{
-    background-color: #2d333b;
-    color: #aab6c3;
+    background-color: #886ED7;
+    color: white;
 }
 
 .invalidInput {
-    border: 2px solid darkred;
-    background-color: #aab6c3;
-    color: darkred;
-    box-shadow: 3px 2px 5px darkred;
+    border: 2px solid #9d4c59;
+    background-color: #ffc3c3;
+    color: #9d4c59;
+    box-shadow: 3px 2px 5px #9d4c59;
     /*box-shadow: 3px 2px 5px darkred;*/
 }
 
 .invalidInput:hover {
-    border: 2px solid darkred;
-    background-color: #ffdddd;
-    color: #22272e;
-    box-shadow: 3px 2px 5px darkred;
+    border: 2px solid #9d4c59;
+    background-color: #ffc3c3;
+    color: #9d4c59;
+    box-shadow: 3px 2px 5px #9d4c59;
     /*box-shadow: 3px 2px 5px darkred;*/
 }
 
 .error {
     font-size: small;
     font-family: "Calibri Light",cursive;
-    color: #aab6c3;
+    color: white;
     box-sizing: border-box;
 }
