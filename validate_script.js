@@ -8,12 +8,13 @@ function validate() {
 
     Array.from(document.getElementsByClassName("formfield"))
         .forEach(node => {
-                switch (node.id) {
+                switch (node.name) {
                     case 'X' : {
-                        let v = validateX(node);
+                        let v = validateX(document.querySelector('.formfield:checked')); //это не работает тут должен быть бьект тип node но тогда чтоб валидация прошла нужно отмечать все чекбоксы
+                        // скорее всего прийдется переписать полностью validateX
                         dataIsCorrect = dataIsCorrect * v;
                         console.log("\tВалидность X = " + v);
-                        x = node.value;
+                        x = document.querySelector('.formfield:checked').id;
                         break;
                     }
                     case 'Y' : {
@@ -60,7 +61,7 @@ function unmarkField(field) {
         o.innerHTML = "");
 }
 
-function validateX(field) {
+function validateX(field) { //тут на вход подается node
     /** Выполняет валидацию поля X.
      * x ∈ { -4, -3, -2, -1, 0, 1, 2, 3, 4}
      * @param field HTML элемент - т.е. фоле формы.
@@ -69,7 +70,7 @@ function validateX(field) {
     //let reg1 = /^-?[0-4]$/;
 
     if (x === "-4" || x === "-3" || x === "-2" || x === "-1" || x === "0" || x === "1" || x === "2" || x === "3" || x === "4") {
-        unmarkField(field);
+        unmarkField(field); //убирает красную подсветку чекбокса
         return true;
     }
     markField(field);

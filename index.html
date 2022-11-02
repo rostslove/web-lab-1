@@ -42,29 +42,46 @@
                 <table id="form_table">
                     <tr>
                         <td>
-                            <label for="X">X </label>
+                            <!-- тут есть проблемка, что можно выбрать несколько
+                                 тогда в х пойдет первое отмеченное значение
+                                  думаю это дорлжно фикситься в валидации (validateX) в js
+                                  -->
                             <div>
-                                <input type="checkbox" id="-2" name="X" required>
-                                <label for="-2" value="-2">-2</label>
+                                <input class="formfield" type="checkbox" id="-4" name="X" >
+                                <label for="-4">-4</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="-1.5" name="X" required>
-                                <label for="-1.5" value="-1.5">-1.5</label>
+                                <input class="formfield" type="checkbox" id="-3" name="X" >
+                                <label for="-3">-3</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="-1" name="X" required>
-                                <label for="-1" value="-1.5">-1.5</label>
+                                <input class="formfield" type="checkbox" id="-2" name="X" >
+                                <label for="-2" >-2</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="-1" name="-1">
-                                <label for="-1.5" value="-1.5">-1.5</label>
+                                <input class="formfield" type="checkbox" id="-1" name="X" >
+                                <label for="-1">-1</label>
                             </div>
-                                <option value="-1">-1</option>
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
+                            <div>
+                                <input class="formfield" type="checkbox" id="0" name="X" >
+                                <label for="0">0</label>
+                            </div>
+                            <div>
+                                <input class="formfield" type="checkbox" id="1" name="X" >
+                                <label for="1">1</label>
+                            </div>
+                            <div>
+                                <input class="formfield" type="checkbox" id="2" name="X" >
+                                <label for="2">2</label>
+                            </div>
+                            <div>
+                                <input class="formfield" type="checkbox" id="3" name="X" >
+                                <label for="3">3</label>
+                            </div>
+                            <div>
+                                <input class="formfield" type="checkbox" id="4" name="X" >
+                                <label for="4">4</label>
+                            </div>
                             </select>
                             <span class="error"></span>
                         </td>
