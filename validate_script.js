@@ -10,8 +10,7 @@ function validate() {
         .forEach(node => {
                 switch (node.name) {
                     case 'X' : {
-                        let v = validateX(document.querySelector('.formfield:checked')); //это не работает тут должен быть бьект тип node но тогда чтоб валидация прошла нужно отмечать все чекбоксы
-                        // скорее всего прийдется переписать полностью validateX
+                        let v = validateX(document.querySelector('.formfield:checked'));
                         dataIsCorrect = dataIsCorrect * v;
                         console.log("\tВалидность X = " + v);
                         x = document.querySelector('.formfield:checked').id;
@@ -66,7 +65,7 @@ function validateX(field) { //тут на вход подается node
      * x ∈ { -4, -3, -2, -1, 0, 1, 2, 3, 4}
      * @param field HTML элемент - т.е. фоле формы.
     **/
-    let x = field.value;
+    let x = field.id;
     //let reg1 = /^-?[0-4]$/;
 
     if (x === "-4" || x === "-3" || x === "-2" || x === "-1" || x === "0" || x === "1" || x === "2" || x === "3" || x === "4") {
