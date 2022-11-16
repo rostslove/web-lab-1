@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Лабораторная работа №1</title>
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="./validation.js" charset="utf-8" type="text/javascript"></script>
 </head>
+
 <body>
+
+<header class="header">
     <table>
-        <thead>
-            <th class="header">
-                Мардышкин Ростислав и Павел Прен P33222 Вариант 21109
-            </th>
-        </thead>
         <tr>
-            <td >
-                <img class="image" src="./Graph.png" />
-            </td>
+            <td><h3>Мардышкин Ростислав и Павел Прен P33222 Вариант 21109</h3></td>
         </tr>
+    </table>
+</header>
+<img class="picture" src="./Graph.png" />
+    <table>
         <tr>
             <td>
                 <form method="post" action="script.php" onsubmit="return validate()" target="table">
@@ -49,7 +49,7 @@
                         <tr>
                             <td class="inputY">Введите значение Y:</td>
                             <td>
-                                <input type="text" id="Y" placeholder="-5..3" name="Y">
+                                <input class="formY" type="text" id="Y" placeholder="-5..3" name="Y">
                             </td>
                             <td id="errorY"></td>
                         </tr>
@@ -65,7 +65,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <button type="submit" name="Submit">Отправить</button>
+                                <button class="formY" type="submit" name="Submit">Отправить</button>
                             </td>
                         </tr>
                     </table>
@@ -74,8 +74,8 @@
         </tr>
         <tr>
             <td colspan="3">
-                <iframe name="table" scrolling="no">
-                </iframe>
+                <table class ='result_table' name="table">
+                </table>
             </td>
         </tr>
     </table>

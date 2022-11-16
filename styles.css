@@ -1,0 +1,40 @@
+.result_table {
+    color: black;
+    background-color: white;
+    width: 100%;
+    border-spacing: 13px;
+    border-color: black;
+    text-align: center;
+}
+
+body {
+    /*margin: 0;*/
+    background-color: #A0C391;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-weight: lighter;
+    font-family: "Times New Roman", serif;
+}
+header {
+    background-color: #5FAC3E;
+    color: white;
+    font-family: cursive;
+    white-space: nowrap;
+}
+h3{
+    margin-left: 100%;
+}
+.picture{
+    margin-left: 40%;
+    width: 29%;
+}
+
+.formY:hover{
+    background-color: #CEFDBA;
+}
+.tdFromPhp{
+    color: black;
+    background-color: white;
+    text-align: center;
+}

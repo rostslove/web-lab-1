@@ -31,8 +31,7 @@ $check = isHit($x, $y, $r);
 $finish = microtime(true);
 $time = number_format($finish-$start,8);
     $dt = new DateTime("now", new DateTimeZone('Europe/Moscow'));
-echo '<link rel="stylesheet" href="./CSS/styles.css">';
-echo '<h3>Результаты</h3>
+echo '
                 <table class="result_table">
                     <thead>
                         <th>X</th>
@@ -57,4 +56,5 @@ if(count($_SESSION['rows'])>=5){
 for ($i; $i < count($_SESSION['rows']); $i++){
     echo $_SESSION['rows'][$i];
 }
+echo '</table>';
 ?>
