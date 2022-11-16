@@ -32,7 +32,14 @@ $finish = microtime(true);
 $time = number_format($finish-$start,8);
     $dt = new DateTime("now", new DateTimeZone('Europe/Moscow'));
 echo '
-                <table class="result_table">
+                <table style= 
+                "color: black;
+                background-color: white;
+                width: 100%;
+                border-spacing: 13px;
+                border-color: black;
+                text-align: center;"
+                >
                     <thead>
                         <th>X</th>
                         <th>Y</th>
